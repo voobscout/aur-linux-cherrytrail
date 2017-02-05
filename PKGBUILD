@@ -60,7 +60,7 @@ prepare() {
   patch -p1 -i "${srcdir}/0_rt8723bs.txt"
 
   # https://github.com/hadess/rtl8723bs/issues/80
-  zcat 0001-ACPI-scan-Prefer-devices-without-_HID-_CID-for-_ADR-.patch.zip | patch -p1
+  zcat "${srcdir}/0001-ACPI-scan-Prefer-devices-without-_HID-_CID-for-_ADR-.patch.zip" | patch -p1
 
   # add latest fixes from stable queue, if needed
   # http://git.kernel.org/?p=linux/kernel/git/stable/stable-queue.git
